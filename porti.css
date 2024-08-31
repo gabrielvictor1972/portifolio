@@ -1,0 +1,139 @@
+/* Reset básico para garantir consistência */
+body, h1, h2, h3, p, ul, li, a, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px; /* Adicionado padding para um espaçamento interno consistente */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicionando uma sombra sutil */
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Navegação */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 15px; /* Aumentado o espaçamento entre os itens de navegação */
+}
+
+/* Estilo dos links de navegação para parecerem botões */
+nav a.button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 12px 24px; /* Ajustado o padding para botões um pouco maiores */
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block; /* Garantir que o link se comporte como um botão */
+    text-align: center; /* Alinhamento central do texto dentro do botão */
+}
+
+nav a.button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+nav a.button:active {
+    background-color: #004494;
+}
+
+/* Seções */
+section {
+    padding: 2rem 0;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+/* Estilo dos produtos */
+.produto {
+    background: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilo das imagens */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+form #formMessage {
+    margin-top: 1rem;
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
